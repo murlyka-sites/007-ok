@@ -5,92 +5,20 @@
 				.posts-and-social__posts.posts.clearfix
 					.row
 						.col-xs-12.col-md-6
-							.posts__item
-								.posts__item-pr
-									img(src="images/posts/5.jpg", alt="")
-								a.posts__item-tag(href="#tag", style="background-color: rgba(225, 82, 95, 0.7);")
-									| Музыка
-								.posts__item-type
-									| Записки музыканта
-								a.posts__item-inner(href="#")
-									.posts__item-title
-										| «Акафист» — слушать стоя
-									.posts__item-desc
-										| 27 октября 2016 года в клубе Metro Великого 
-										| Новгорода прошёл концерт удивительного 
-										| коллектива - "Психея".
+							+posts-item("posts/5.jpg", "Музыка", "background-color: rgba(225, 82, 95, 0.7);", "Записки музыканта", "Акафист» — слушать стоя", "27 октября 2016 года в клубе Metro Великого Новгорода прошёл концерт удивительного коллектива - Психея.")
 						.col-xs-12.col-md-6
-							.posts__item
-								.posts__item-pr
-									img(src="images/posts/6.jpg", alt="")
-								a.posts__item-tag(href="#", style="background-color: rgba(58, 209, 115, 0.7);")
-									| Искусство
-								a.posts__item-inner(href="#")
-									.posts__item-title.line-clamp.line-clamp-2
-										| Ход конем: 148 живых 
-										| достояний России
-									.posts__item-desc
-										| 27 октября 2016 года в клубе Metro Великого 
-										| Новгорода прошёл концерт удивительного 
-										| коллектива - "Психея".
+							+posts-item("posts/6.jpg", "Искусство", "background-color: rgba(225, 82, 95, 0.7);", "", "Ход конем: 148 живых достояний России", "27 октября 2016 года в клубе Metro Великого Новгорода прошёл концерт удивительного коллектива - Психея.")
 					.row
 						.col-xs-12.col-md-6
-							.posts__item
-								.posts__item-pr
-									img(src="images/posts/7.jpg", alt="")
-								a.posts__item-tag(href="#tag", style="background-color: rgba(216, 126, 8, 0.7);")
-									| Путешествия
-								.posts__item-type
-									| Здесь был Андрей
-								a.posts__item-inner(href="#")
-									.posts__item-title
-										| Гобустан. 
-										| Встреча с наскальными ...
-									.posts__item-desc
-										| 27 октября 2016 года в клубе Metro Великого 
-										| Новгорода прошёл концерт удивительного 
-										| коллектива - "Психея".
+							+posts-item("posts/7.jpg", "Путешествия", "background-color: rgba(216, 126, 8, 0.7);", "Здесь был Андрей", "Гобустан. Встреча с наскальными ...", "27 октября 2016 года в клубе Metro Великого Новгорода прошёл концерт удивительного коллектива - Психея.")
 						.col-xs-12.col-md-6
-							.posts__item
-								.posts__item-pr
-									img(src="images/posts/8.jpg", alt="")
-								a.posts__item-tag(href="#tag", style="background-color: rgba(225, 82, 95, 0.7);")
-									| Музыка
-								.posts__item-type
-									| Шаг к мечте
-								a.posts__item-inner(href="#")
-									.posts__item-title
-										| В Тампере успешно прошёл 
-										| Российско-Финляндский ...
-									.posts__item-desc
-										| 27 октября 2016 года в клубе Metro Великого 
-										| Новгорода прошёл концерт удивительного 
-										| коллектива - "Психея".
+							+posts-item("posts/8.jpg", "Музыка", "background-color: rgba(225, 82, 95, 0.7);", "Шаг к мечте", "В Тампере успешно прошёл Российско-Финляндский ...", "27 октября 2016 года в клубе Metro Великого Новгорода прошёл концерт удивительного коллектива - Психея.")
 						.col-xs-12
 							a.btn__more(href="#")
 								| Ещё
 			.col-xs-12.col-sm-6.col-md-3.container__aside
 				.aside.aside--white
-					.aside-social-tabs
-						ul.aside-social-tabs__list
-							li.active
-								a(href="#social-tab-vk")
-									span.i-social-vk
-							li
-								a(href="#social-tab-fb")
-									span.i-social-fb
-							li
-								a(href="#social-tab-tw")
-									span.i-social-tw
-						.aside-social-tabs__contents
-							#social-tab-vk.aside-social-tabs__content.active
-								img(src="images/other/1.jpg", alt="", style="max-width: 100%")
-
-							#social-tab-fb.aside-social-tabs__content
-								img(src="images/other/2.jpg", alt="", style="max-width: 100%")
-
-							#social-tab-tw.aside-social-tabs__content
-								img(src="images/other/3.jpg", alt="", style="max-width: 100%")
+					include aside/social-tabs-white
 					a(href="#")
 						.aside-post.aside-post--white
 							.aside-post__pr

@@ -1,0 +1,118 @@
+include mixins/carousel.jade
+
+mixin affiche-item-small(images, date, title, subclass)
+	.affiche-small__item
+		a.link-none(href="#")
+			.affiche-small__item-pr
+				img(src="images/#{images}", alt="#{title}", widht="170", width="251")
+			time.affiche-small__item-date(datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм")
+				| #{date}
+			.affiche-small__item-title
+				| #{title}
+
+mixin affiche-item(images, date, title, subclass)
+	.affiche-small__item
+		a.link-none(href="#")
+			.affiche__item-pr
+				img(src="images/#{images}", alt="#{title}", widht="270", height="400")
+			time.affiche__item-date(datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм")
+				| #{date}
+			.affiche__item-title
+				| #{title}
+
+mixin posts-item(images, tag, color, type, title, desc)
+	.posts__item
+		.posts__item-pr
+			img(src="images/#{images}", alt="#{title}", width="420", height="280")
+		a.posts__item-tag(href="#tag", style="#{color}")
+			| #{tag}
+		if type
+			.posts__item-type
+				| #{type}
+
+		a.posts__item-inner(href="#")
+			.posts__item-title
+				| #{title}
+			.posts__item-desc
+				| #{desc}
+
+mixin article-list-item(images, tag, color, title)
+	.articles-list__item
+		.articles-list__item-pr
+			a(href="#")
+				img(src="images/#{images}", alt="#{title}", width="270", height="152")
+			a.articles-list__item-tag(href="#", style="#{color}")
+				| #{tag}
+		.articles-list__item-desc
+			a.articles-list__item-title(href="#")
+				| #{title}
+
+mixin author-item(images, title, desc)
+	.author__item
+		.author__item-pr
+			a(href="#")
+				img(src="images/#{images}", alt="#{title}", width="270", height="152")
+		.author__item-text(style="margin-right: 50px")
+			a.author__item-title(href="#")
+				| #{title}
+			.author__item-desc
+				| #{desc}
+
+mixin authors-card(images, name, project)
+	.authors__card
+		.authors__card-pr
+			a(href="#")
+				img(src="images/#{images}", alt="#{name}", width="268", height="268")
+		.authors__card-foo
+			a.authors__card-name(href="#")
+				| #{name}
+			.authors__card-desc
+				| автор проекта 
+				br
+				a(href="#")
+					| #{project}
+
+mixin special-item(images, tag, color, title)
+	.special__item
+		.special__item-pr
+			a(href="#")
+				img(src="images/#{images}", alt="#{title}", width="270", height="152")
+			a.special__item-tag(href="#", style="#{color}")
+				| #{tag}
+		.special__item-desc
+			a.special__item-title(href="#")
+				| #{title}
+
+mixin news-item(images, date, title, desc)
+	.row.news__item
+		.col-xs-12.col-md-4
+			a(href="#")
+				img.news__item-pr(src="images/#{images}", alt="#{title}", width="270", height="152")
+		.col-xs-12.col-md-8
+			.news__item-text
+				time.news__item-date(datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм")
+					| #{date}
+				a.news__item-title(href="#")
+					| #{title}
+				.news__item-desc
+					| #{desc}
+
+mixin articles-item(images, title, desc)
+	.articles__item
+		.articles__item-pr
+			a(href="#")
+				img(src="images/#{images}", alt="#{title}", width="270", height="152")
+		.articles__item-text
+			a.articles__item-title(href="#")
+				| #{title}
+			.articles__item-desc
+				| #{desc}
+
+mixin area-item(images, title)
+	.filter-body__item
+		.filter-body__item-pr
+			a(href="#")
+				img(src="images/#{images}", alt="#{title}", width="270", height="152")
+		.filter-body__item-desc
+			a.filter-body__item-title(href="#")
+				| #{title}

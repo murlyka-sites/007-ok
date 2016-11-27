@@ -27,30 +27,15 @@
 							| Родился в Новгороде в прошлом в еке, окончил гимназию, потом экономический факультет НовГУ. 
 							br
 							| После этого отслужил два года в качестве офицера. Там же узнал, что такое fire-show.
-						a.author__desc-link(href="#author-desc-full", data-open="false")
+						a.author__desc-link.js-more(href="#author-desc-full", data-open="false")
 							| Подробнее
 				.author__items
 					.author__collapse.js-collapse(data-collapse)
 						h3.author__collapse-title.open
 							|	Алхимия звука:
 						.author__collapse-content
-							.author__item
-								.author__item-pr
-									a(href="#")
-										img(src="images/collapse/1.jpg", alt="")
-								.author__item-text(style="margin-right: 50px")
-									a.author__item-title(href="#")
-										| Red Hot Chili Peppers - Californication
-									.author__item-desc
-										| Классе примерно в десятом я купил на рынке кассету группы Red Hot Chili Peppers, которая называлась Californication. На самом деле там было несколько песен с другого альбома, и не хватало нескольких с собственно Californication, но сама заглавная песня там была, и слушал я на этой кассете в основном её.
-							.author__item
-								a.author__item-pr(href="#")
-									img(src="images/collapse/2.jpg", alt="")
-								.author__item-text
-									a.author__item-title(href="#")
-										| Metallica - Master Of Puppets
-									.author__item-desc
-										| Третьего марта исполнилось тридцать лет альбому Master Of Puppets. Этот альбом до сих пор считается поклонниками группы Metallica и самими музыкантами одной из знаковых точек всего творческого пути группы.
+							+author-item("collapse/1.jpg", "Red Hot Chili Peppers - Californication", "Классе примерно в десятом я купил на рынке кассету группы Red Hot Chili Peppers, которая называлась Californication. На самом деле там было несколько песен с другого альбома, и не хватало нескольких с собственно Californication, но сама заглавная песня там была, и слушал я на этой кассете в основном её.")
+							+author-item("collapse/2.jpg", "Metallica - Master Of Puppets", "Третьего марта исполнилось тридцать лет альбому Master Of Puppets. Этот альбом до сих пор считается поклонниками группы Metallica и самими музыкантами одной из знаковых точек всего творческого пути группы.")
 							a.author__collapse-more.btn__more(href="#")
 								| Ещё
 
@@ -58,48 +43,20 @@
 						h3.author__collapse-title.open
 							|	Как играть на гитаре:
 						.author__collapse-content
-							.author__item
-								a.author__item-pr(href="#")
-									img(src="images/collapse/1.jpg", alt="")
-								.author__item-text
-									a.author__item-title(href="#")
-										| Red Hot Chili Peppers - Californication
-									.author__item-desc
-										| Классе примерно в десятом я купил на рынке кассету группы Red Hot Chili Peppers, которая называлась Californication. На самом деле там было несколько песен с другого альбома, и не хватало нескольких с собственно Californication, но сама заглавная песня там была, и слушал я на этой кассете в основном её.
-							.author__item
-								a.author__item-pr(href="#")
-									img(src="images/collapse/2.jpg", alt="")
-								.author__item-text
-									a.author__item-title(href="#")
-										| Metallica - Master Of Puppets
-									.author__item-desc
-										| Третьего марта исполнилось тридцать лет альбому Master Of Puppets. Этот альбом до сих пор считается поклонниками группы Metallica и самими музыкантами одной из знаковых точек всего творческого пути группы.
+							+author-item("collapse/1.jpg", "Red Hot Chili Peppers - Californication", "Классе примерно в десятом я купил на рынке кассету группы Red Hot Chili Peppers, которая называлась Californication. На самом деле там было несколько песен с другого альбома, и не хватало нескольких с собственно Californication, но сама заглавная песня там была, и слушал я на этой кассете в основном её.")
+							+author-item("collapse/2.jpg", "Metallica - Master Of Puppets", "Третьего марта исполнилось тридцать лет альбому Master Of Puppets. Этот альбом до сих пор считается поклонниками группы Metallica и самими музыкантами одной из знаковых точек всего творческого пути группы.")
 							a.author__collapse-more.btn__more(href="#")
 								| Ещё
 					.author__collapse.js-collapse(data-collapse)
 						h3.author__collapse-title.closed
 							|	Записки музыканта
 						.author__collapse-content
-							.author__item
-								a.author__item-pr(href="#")
-									img(src="images/collapse/1.jpg", alt="")
-								.author__item-text
-									a.author__item-title(href="#")
-										| Red Hot Chili Peppers - Californication
-									.author__item-desc
-										| Классе примерно в десятом я купил на рынке кассету группы Red Hot Chili Peppers, которая называлась Californication. На самом деле там было несколько песен с другого альбома, и не хватало нескольких с собственно Californication, но сама заглавная песня там была, и слушал я на этой кассете в основном её.
-							.author__item
-								a.author__item-pr(href="#")
-									img(src="images/collapse/2.jpg", alt="")
-								.author__item-text
-									a.author__item-title(href="#")
-										| Metallica - Master Of Puppets
-									.author__item-desc
-										| Третьего марта исполнилось тридцать лет альбому Master Of Puppets. Этот альбом до сих пор считается поклонниками группы Metallica и самими музыкантами одной из знаковых точек всего творческого пути группы.
+							+author-item("collapse/1.jpg", "Red Hot Chili Peppers - Californication", "Классе примерно в десятом я купил на рынке кассету группы Red Hot Chili Peppers, которая называлась Californication. На самом деле там было несколько песен с другого альбома, и не хватало нескольких с собственно Californication, но сама заглавная песня там была, и слушал я на этой кассете в основном её.")
+							+author-item("collapse/2.jpg", "Metallica - Master Of Puppets", "Третьего марта исполнилось тридцать лет альбому Master Of Puppets. Этот альбом до сих пор считается поклонниками группы Metallica и самими музыкантами одной из знаковых точек всего творческого пути группы.")
 							a.author__collapse-more.btn__more(href="#")
 								| Ещё
 			.col-xs-12.col-sm-6.col-md-4.col-lg-3.container__aside
-				aside.aside.aside--baige.aside--long
+				aside.aside.aside--baige.aside--long.aside--top-margin
 					include aside/social-links-white.jade
 					include aside/news-white.jade
 					include aside/post-1-white.jade

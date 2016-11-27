@@ -1,5 +1,5 @@
 
-.dropdown-left
+.dropdown-left.js-dropdown
 	.drop-rubric.rubric
 		.rubric-hidden.rubric-briefly
 			.rubric-briefly__tabs
@@ -7,7 +7,7 @@
 					| наглядно
 				a.rubric-briefly__tab.active(href="#")
 					| кратко
-			a.rubric-briefly__close(href="#")
+			a.rubric-briefly__close.js-close-rubric(href="#")
 				span.i-drop-close.rubric-detail__close-icon
 			ul
 				li
@@ -76,7 +76,7 @@
 									| наглядно
 								a.rubric-detail__tab(href="#")
 									| кратко
-							a.rubric-detail__close(href="#")
+							a.rubric-detail__close.js-close-rubric(href="#")
 								span.rubric-detail__close-title
 									| свернуть 
 								span.i-drop-close.rubric-detail__close-icon
@@ -373,7 +373,7 @@
 					.col-xs-12
 						footer.rubric-detail__foo
 							.rubric-detail__title
-								a.rubric-detail__close(href="#")
+								a.rubric-detail__close.js-close-rubric(href="#")
 									span.rubric-detail__close-title
 										| свернуть 
 									span.i-drop-close.rubric-detail__close-icon

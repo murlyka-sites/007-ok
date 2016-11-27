@@ -1,0 +1,28 @@
+mixin main-slide(images, title)
+	div.main-slider__slide
+		img(src="images/#{images}", alt="Альтернативный текст", width="970", height="500")
+		.main-slider__slide-title
+			| #{title}
+
+mixin affiche-slide(images, title, date)
+	.affiche__item
+		a.link-none(href="#")
+			.affiche__item-pr
+				img(src="images/#{images}", alt="",)
+			time.affiche__item-date(datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм")
+				| #{title}
+			.affiche__item-title
+				| #{date}
+mixin news-slide(date, desc)
+	.aside-news__group
+		+news-aside-item("12 ноября 16:20", "Выставка молодых новгородских художников открылась выставка инструментов")
+		+news-aside-item("10 ноября 13:20", "В Великом Новгороде вспомнят основателя Центра музыкальных  древностей инструментов")
+		+news-aside-item("10 ноября 13:20", "В Великом Новгороде вспомнят основателя Центра музыкальных инструментов инструментов")
+
+mixin news-aside-item(date, desc)
+	.aside-news__item
+		a.link-none(href="#")
+			time.aside-news__item-date(datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм")
+				| #{date}
+			.aside-news__item-title
+				| #{desc}

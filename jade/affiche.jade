@@ -21,48 +21,11 @@
 						| на выходных
 			.col-xs-12
 				.row
-					.affiche__items
-						a.affiche__item(href="#")
-							.affiche__item-pr
-								img(src="images/affiche/1.jpg", alt="")
-							.affiche__item-date
-								| 1 марта в 16:00
-							.affiche__item-title
-								| Прогулка
-						a.affiche__item(href="#")
-							.affiche__item-pr
-								img(src="images/affiche/2.jpg", alt="")
-							.affiche__item-date
-								| 03 февраля в 22:00
-							.affiche__item-title
-								| ДОН ЖУАН. Версия
-						a.affiche__item(href="#")
-							.affiche__item-pr
-								img(src="images/affiche/3.jpg", alt="")
-							.affiche__item-date
-								| 02 февраля в 22:00
-							.affiche__item-title
-								| Группа 
-								| «SPIRITUAL SEASONS»
-						a.affiche__item(href="#")
-							.affiche__item-pr
-								img(src="images/affiche/1.jpg", alt="")
-							.affiche__item-date
-								| 1 марта в 16:00
-							.affiche__item-title
-								| Прогулка
-						a.affiche__item(href="#")
-							.affiche__item-pr
-								img(src="images/affiche/2.jpg", alt="")
-							.affiche__item-date
-								| 03 февраля в 22:00
-							.affiche__item-title
-								| ДОН ЖУАН. Версия
-						a.affiche__item(href="#")
-							.affiche__item-pr
-								img(src="images/affiche/3.jpg", alt="")
-							.affiche__item-date
-								| 02 февраля в 22:00
-							.affiche__item-title
-								| Группа 
-								| «SPIRITUAL SEASONS»
+					.affiche__items.carousel.carousel-affiche.js-affiche-slider
+						+affiche-slide("affiche/1.jpg", "1 марта в 16:00", "Прогулка")
+						+affiche-slide("affiche/2.jpg", "03 февраля в 22:00", "ДОН ЖУАН. Версия")
+						+affiche-slide("affiche/3.jpg", "02 февраля в 22:00", "Группа «SPIRITUAL SEASONS»")
+
+						+affiche-slide("affiche/1.jpg", "1 марта в 16:00", "Прогулка")
+						+affiche-slide("affiche/2.jpg", "03 февраля в 22:00", "ДОН ЖУАН. Версия")
+						+affiche-slide("affiche/3.jpg", "02 февраля в 22:00", "Группа «SPIRITUAL SEASONS»")

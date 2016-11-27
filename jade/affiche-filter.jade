@@ -5,11 +5,11 @@
 				h2.filter-head__title
 					| Афиша
 					.filter-head__tabs
-						a.filter-head__tab(href="#")
+						a.filter-head__tab.js-filter-tab(href="#filter-body-1")
 							| события
-						a.filter-head__tab(href="#")
+						a.filter-head__tab.js-filter-tab.active(href="#filter-body-2")
 							| площадки
-						a.filter-head__tab(href="#")
+						a.filter-head__tab.js-filter-tab(href="#filter-body-3")
 							span.i-filter.filter-head__tab-icon
 							| фильтр
 			.col-md-12.col-lg-6
@@ -23,76 +23,33 @@
 					a(href="#")
 						| на выходных
 
-.filter-body
-	.container
-		.row
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/1.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Мираж ТРЦ «Мармелад»
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/2.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Киноцентр
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/3.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Театр малый
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/4.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Театр Драммы 
-		.row
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/1.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Мираж ТРЦ «Мармелад»
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/2.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Киноцентр
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/3.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Театр малый
-			.col-xs-12.col-sm-6.col-md-3
-				.filter-body__item
-					.filter-body__item-pr
-						a(href="#")
-							img(src="images/filter-body/4.jpg", alt="")
-					.filter-body__item-desc
-						a.filter-body__item-title(href="#")
-							| Театр Драммы 
-		.row
-			.col-xs-12
-				a.filter-body__more.btn__more(href="#")
-					| Ещё
+.filter-body.js-filter-filtered
+	#filter-body-1.hidden
+		| 123
+	#filter-body-2.visible
+		.container
+			.row
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/1.jpg", "Мираж ТРЦ «Мармелад»")
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/2.jpg", "Киноцентр")
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/3.jpg", "Театр малый")
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/4.jpg", "Театр Драммы ")
+			.row
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/1.jpg", "Мираж ТРЦ «Мармелад»")
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/2.jpg", "Киноцентр")
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/3.jpg", "Театр малый")
+				.col-xs-12.col-sm-6.col-md-3
+					+area-item("filter-body/4.jpg", "Театр Драммы ")
+			.row
+				.col-xs-12
+					a.filter-body__more.btn__more(href="#")
+						| Ещё
+	#filter-body-3.hidden
+		| 123
 

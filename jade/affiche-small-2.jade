@@ -1,4 +1,4 @@
-.affiche-small
+.affiche-small.bg-dark
 	.container
 		.row
 			.col-xs-12
@@ -7,40 +7,15 @@
 			.col-xs-12.col-lg-6
 				.row
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/1.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 1 марта в 16:00
-							a.affiche-small__item-title(href="#")
-								| Прогулка
+						+affiche-item-small("affiche-small/1.jpg", "1 марта в 16:00", "Прогулка")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/2.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 28 февраля в 17:00
-							a.affiche-small__item-title(href="#")
-								| Лобстер
+						+affiche-item-small("affiche-small/2.jpg", "28 февраля в 17:00", "Лобстер")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/3.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 10 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| Убийца
-
+						+affiche-item-small("affiche-small/3.jpg", "10 февраля в 22:00", "Убийца")
 			.col-xs-12.col-lg-6
 				.row
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/4.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 11 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| Выживший
+						+affiche-item-small("affiche-small/4.jpg", "11 февраля в 22:00", "Выживший")
 					.col-xs-12.col-sm-8
 						.affiche-small__item
 							include calendar.jade

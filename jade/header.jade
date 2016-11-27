@@ -3,22 +3,20 @@
 		.container
 			.row
 				.col-xs-12
-					form.header__inner(action="")
-						
+					form.header__inner.js-header-inner(action="")						
 						input.header__inner-input(type="search", placeholder="поиск")
 						button.header__inner-ok.btn__ok
 							| ОК
-						a.header__inner-close(href="#")
+						a.header__inner-close.js-header-close(href="#")
 							i.fa.fa-2x.fa-times-circle-o
 					.clearfix
 							button.header__humburger
 								span.humburger
-					.header__container
-						
+					.header__container						
 						.header__col
 							ul.header__nav.header__nav--left
 								li.hidden-xs
-									a.special-item
+									a.header__nav-rubric.js-open-rubric
 										| Разделы
 								li
 									a
@@ -43,5 +41,5 @@
 									a
 										| Стать автором
 								li
-									a.header__search(href="#")
+									a.header__search.js-header-open(href="#")
 										i.fa.fa-search.icon-search

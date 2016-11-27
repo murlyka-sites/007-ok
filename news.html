@@ -19,17 +19,17 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <form action="" class="header__inner">
+              <form action="" class="header__inner js-header-inner">						
                 <input type="search" placeholder="поиск" class="header__inner-input">
-                <button class="header__inner-ok btn__ok">ОК</button><a href="#" class="header__inner-close"><i class="fa fa-2x fa-times-circle-o"></i></a>
+                <button class="header__inner-ok btn__ok">ОК</button><a href="#" class="header__inner-close js-header-close"><i class="fa fa-2x fa-times-circle-o"></i></a>
               </form>
               <div class="clearfix">
                 <button class="header__humburger"><span class="humburger"></span></button>
               </div>
-              <div class="header__container">
+              <div class="header__container">						
                 <div class="header__col">
                   <ul class="header__nav header__nav--left">
-                    <li class="hidden-xs"><a class="special-item">Разделы</a></li>
+                    <li class="hidden-xs"><a class="header__nav-rubric js-open-rubric">Разделы</a></li>
                     <li><a>Афиша</a></li>
                     <li><a>Новости</a></li>
                     <li><a href="#" class="header__nav-author-btn visible-xs">Стать автором</a></li>
@@ -41,7 +41,7 @@
                   <ul class="header__nav header__nav--right">
                     <li><a>Об авторах</a></li>
                     <li><a>Стать автором</a></li>
-                    <li><a href="#" class="header__search"><i class="fa fa-search icon-search"></i></a></li>
+                    <li><a href="#" class="header__search js-header-open"><i class="fa fa-search icon-search"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -50,7 +50,7 @@
         </div>
       </header>
     </div>
-    <div class="main-slider">
+    <div class="main-slider carousel carouse__main">
       <div class="main-slider__wrap">
         <div class="container">
           <div class="row">
@@ -60,25 +60,25 @@
           </div>
         </div>
       </div>
-      <div class="main-slider__container">
-        <div class="main-slider__slide"><img src="images/main-slider/1.jpg" alt="">
-          <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
-        </div>
-        <div class="main-slider__slide"><img src="images/main-slider/2.jpg" alt="">
-          <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
-        </div>
-        <div class="main-slider__slide"><img src="images/main-slider/3.jpg" alt="">
-          <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
-        </div>
-        <div class="main-slider__slide"><img src="images/main-slider/1.jpg" alt="">
-          <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
-        </div>
-        <div class="main-slider__slide"><img src="images/main-slider/2.jpg" alt="">
-          <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
-        </div>
-        <div class="main-slider__slide"><img src="images/main-slider/3.jpg" alt="">
-          <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
-        </div>
+      <div class="main-slider__container js-main-slider">
+            <div class="main-slider__slide"><img src="images/main-slider/1.jpg" alt="Альтернативный текст" width="970" height="500">
+              <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
+            </div>
+            <div class="main-slider__slide"><img src="images/main-slider/3.jpg" alt="Альтернативный текст" width="970" height="500">
+              <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
+            </div>
+            <div class="main-slider__slide"><img src="images/main-slider/2.jpg" alt="Альтернативный текст" width="970" height="500">
+              <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
+            </div>
+            <div class="main-slider__slide"><img src="images/main-slider/1.jpg" alt="Альтернативный текст" width="970" height="500">
+              <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
+            </div>
+            <div class="main-slider__slide"><img src="images/main-slider/3.jpg" alt="Альтернативный текст" width="970" height="500">
+              <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
+            </div>
+            <div class="main-slider__slide"><img src="images/main-slider/2.jpg" alt="Альтернативный текст" width="970" height="500">
+              <div class="main-slider__slide-title">Взгляд из-за угла: Танцевальный бум</div>
+            </div>
       </div>
     </div>
     <div class="news">
@@ -87,85 +87,85 @@
           <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 container__main">
             <h2 class="news__title">Новости </h2>
             <div class="news__items clearfix">
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/1.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">Группа «Wildways» устроит грандиозный концерт в Великом Новгороде</a>
-                    <div class="news__item-desc">6 ноября в Великом Новгороде в клубе «Железный папа» выступит умопомрачительная группа — «Wildways». За 7 лет существования музыканты сумели покорить сердца европейских и российских слушателей.</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/1.jpg" alt="Группа «Wildways» устроит грандиозный концерт в Великом Новгороде" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">Группа «Wildways» устроит грандиозный концерт в Великом Новгороде</a>
+                        <div class="news__item-desc">6 ноября в Великом Новгороде в клубе «Железный папа» выступит умопомрачительная группа — «Wildways». За 7 лет существования музыканты сумели покорить сердца европейских и российских слушателей.</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/2.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">При "Всероссийском обществе слепых" в Новгороде планируется создать "молодежную ячейку" активистов</a>
-                    <div class="news__item-desc">"Всероссийское общество слепых" в Великом Новгороде привлекает активную молодежь с проблемами зрения к совместной работе</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/2.jpg" alt="При &quot;Всероссийском обществе слепых&quot; в Новгороде планируется создать &quot;молодежную ячейку&quot; активистов" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">При &quot;Всероссийском обществе слепых&quot; в Новгороде планируется создать &quot;молодежную ячейку&quot; активистов</a>
+                        <div class="news__item-desc">&quot;Всероссийское общество слепых&quot; в Великом Новгороде привлекает активную молодежь с проблемами зрения к совместной работе</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/3.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">Дети не хотят жить с Анджелиной Джоли</a>
-                    <div class="news__item-desc">Брэд Питт и Анджелина Джоли заняты бракоразводным процессом и документами об опеке детей.</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/3.jpg" alt="Дети не хотят жить с Анджелиной Джоли" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">Дети не хотят жить с Анджелиной Джоли</a>
+                        <div class="news__item-desc">Брэд Питт и Анджелина Джоли заняты бракоразводным процессом и документами об опеке детей.</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/4.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">Конкурс дизайна автомобилей «Стрит-арт на борту»</a>
-                    <div class="news__item-desc">Объявлен всероссийский конкурс дизайна автомобилей такси «Стрит-арт на борту». Дедлайн 21 декабря 2016 года.</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/4.jpg" alt="Конкурс дизайна автомобилей «Стрит-арт на борту»" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">Конкурс дизайна автомобилей «Стрит-арт на борту»</a>
+                        <div class="news__item-desc">Объявлен всероссийский конкурс дизайна автомобилей такси «Стрит-арт на борту». Дедлайн 21 декабря 2016 года.</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/1.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">Группа «Wildways» устроит грандиозный концерт в Великом Новгороде</a>
-                    <div class="news__item-desc">6 ноября в Великом Новгороде в клубе «Железный папа» выступит умопомрачительная группа — «Wildways». За 7 лет существования музыканты сумели покорить сердца европейских и российских слушателей.</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/1.jpg" alt="Группа «Wildways» устроит грандиозный концерт в Великом Новгороде" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">Группа «Wildways» устроит грандиозный концерт в Великом Новгороде</a>
+                        <div class="news__item-desc">6 ноября в Великом Новгороде в клубе «Железный папа» выступит умопомрачительная группа — «Wildways». За 7 лет существования музыканты сумели покорить сердца европейских и российских слушателей.</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/2.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">При "Всероссийском обществе слепых" в Новгороде планируется создать "молодежную ячейку" активистов</a>
-                    <div class="news__item-desc">"Всероссийское общество слепых" в Великом Новгороде привлекает активную молодежь с проблемами зрения к совместной работе</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/2.jpg" alt="При &quot;Всероссийском обществе слепых&quot; в Новгороде планируется создать &quot;молодежную ячейку&quot; активистов" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">При &quot;Всероссийском обществе слепых&quot; в Новгороде планируется создать &quot;молодежную ячейку&quot; активистов</a>
+                        <div class="news__item-desc">&quot;Всероссийское общество слепых&quot; в Великом Новгороде привлекает активную молодежь с проблемами зрения к совместной работе</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/3.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">Дети не хотят жить с Анджелиной Джоли</a>
-                    <div class="news__item-desc">Брэд Питт и Анджелина Джоли заняты бракоразводным процессом и документами об опеке детей.</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/3.jpg" alt="Дети не хотят жить с Анджелиной Джоли" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">Дети не хотят жить с Анджелиной Джоли</a>
+                        <div class="news__item-desc">Брэд Питт и Анджелина Джоли заняты бракоразводным процессом и документами об опеке детей.</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row news__item">
-                <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/4.jpg" alt="" class="news__item-pr"></a></div>
-                <div class="col-xs-12 col-md-8">
-                  <div class="news__item-text">
-                    <div class="news__item-date">23.10.2016 в 15:20</div><a href="#" class="news__item-title">Конкурс дизайна автомобилей «Стрит-арт на борту»</a>
-                    <div class="news__item-desc">Объявлен всероссийский конкурс дизайна автомобилей такси «Стрит-арт на борту». Дедлайн 21 декабря 2016 года.</div>
+                  <div class="row news__item">
+                    <div class="col-xs-12 col-md-4"><a href="#"><img src="images/news/4.jpg" alt="Конкурс дизайна автомобилей «Стрит-арт на борту»" width="270" height="152" class="news__item-pr"></a></div>
+                    <div class="col-xs-12 col-md-8">
+                      <div class="news__item-text">
+                        <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="news__item-date">23.10.2016 в 15:20</time><a href="#" class="news__item-title">Конкурс дизайна автомобилей «Стрит-арт на борту»</a>
+                        <div class="news__item-desc">Объявлен всероссийский конкурс дизайна автомобилей такси «Стрит-арт на борту». Дедлайн 21 декабря 2016 года.</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
               <div class="row">
                 <div class="col-xs-12"><a href="#" class="btn__more news__more">Ещё</a></div>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 container__aside">
-            <aside class="aside aside--dark aside--long">
+            <aside class="aside aside--dark aside--long aside--top-margin">
               <div class="aside-social-links social social--dark">
                 <div class="social__title">Подписывайтесь:</div>
                 <ul class="social__list">
@@ -177,55 +177,31 @@
                   <li class="social__item"><a href="#" class="social__link"><span class="social-dark__in"></span></a></li>
                 </ul>
               </div>
-              <div class="aside-news aside-news--dark">
+              <div class="aside-news aside-news--dark carousel carousel-news">
                 <h4 class="aside-news__title">Новости</h4>
-                <div class="aside-news__items">
-                  <div class="aside-news__group"><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">12 ноября 16:20</div>
-                      <div class="aside-news__item-title">
-                        Выставка молодых 
-                        новгородских  
-                        художников открылась 
-                        выставка 
-                        инструментов
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных 
-                        древностей 
-                        инструментов 
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных инструментов инструментов
-                      </div></a></div>
-                  <div class="aside-news__group"><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">12 ноября 16:20</div>
-                      <div class="aside-news__item-title">
-                        Выставка молодых 
-                        новгородских  
-                        художников открылась 
-                        выставка 
-                        инструментов
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных 
-                        древностей 
-                        инструментов 
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных инструментов инструментов
-                      </div></a></div>
+                <div class="aside-news__items js-aside-news-slider">
+                      <div class="aside-news__group">
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">12 ноября 16:20</time>
+                                <div class="aside-news__item-title">Выставка молодых новгородских художников открылась выставка инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных  древностей инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных инструментов инструментов</div></a></div>
+                      </div>
+                      <div class="aside-news__group">
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">12 ноября 16:20</time>
+                                <div class="aside-news__item-title">Выставка молодых новгородских художников открылась выставка инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных  древностей инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных инструментов инструментов</div></a></div>
+                      </div>
                 </div>
               </div><a href="#">
                 <div class="aside-post aside-post--dark">
@@ -233,9 +209,9 @@
                 </div></a>
               <div class="aside-social-tabs aside-social-tabs--dark">
                 <ul class="aside-social-tabs__list">
-                  <li class="active"><a href="#social-tab-vk"><span class="i-social-dark-hover-vk"></span></a></li>
-                  <li><a href="#social-tab-fb"><span class="i-social-dark-hover-fb"></span></a></li>
-                  <li><a href="#social-tab-tw"><span class="i-social-dark-hover-tw"></span></a></li>
+                  <li class="active"><a href="#social-tab-vk" class="js-social-tab"><span class="i-social-dark-hover-vk"></span></a></li>
+                  <li><a href="#social-tab-fb" class="js-social-tab"><span class="i-social-dark-hover-fb"></span></a></li>
+                  <li><a href="#social-tab-tw" class="js-social-tab"><span class="i-social-dark-hover-tw"></span></a></li>
                 </ul>
                 <div class="aside-social-tabs__contents">
                   <div id="social-tab-vk" class="aside-social-tabs__content active"><img src="images/other/1.jpg" alt=""></div>
@@ -260,7 +236,6 @@
     <div class="distribution">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12"><a href="#" class="distribution__up"><span class="i-up"></span></a></div>
           <div class="col-xs-12 col-sm-6">
             <form action="" class="distribution__content">Хотите получать рассылку ?<br class="hidden-lg">
               <input type="email" placeholder="Оставьте ваш емайл" required class="distribution__email">
@@ -272,12 +247,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><a href="#" class="distribution__up js-arrow-up"><span class="i-up"></span></a>
     <footer class="foo">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-3">
-            <button class="nav-foo__humburger pull-right"><span class="humburger"></span></button><img src="images/foo-logo.png" alt="" class="foo__logo">
+            <button class="nav-foo__humburger pull-right js-open-menu"><span class="humburger"></span></button><img src="images/foo-logo.png" alt="" class="foo__logo">
           </div>
           <div class="col-xs-12 col-md-9">
             <nav class="foo__nav nav-foo">
@@ -301,10 +276,10 @@
         </div>
       </div>
     </footer>
-    <div class="dropdown-left">
+    <div class="dropdown-left js-dropdown">
       <div class="drop-rubric rubric">
         <div class="rubric-hidden rubric-briefly">
-          <div class="rubric-briefly__tabs"><a href="#" class="rubric-briefly__tab">наглядно</a><a href="#" class="rubric-briefly__tab active">кратко</a></div><a href="#" class="rubric-briefly__close"><span class="i-drop-close rubric-detail__close-icon"></span></a>
+          <div class="rubric-briefly__tabs"><a href="#" class="rubric-briefly__tab">наглядно</a><a href="#" class="rubric-briefly__tab active">кратко</a></div><a href="#" class="rubric-briefly__close js-close-rubric"><span class="i-drop-close rubric-detail__close-icon"></span></a>
           <ul>
             <li><a href="#">Театр<span style="background: #52b0e1" class="rubric-briefly__badge badge">165</span></a></li>
             <li><a href="#">Кино<span style="background: #7592e7;" class="rubric-briefly__badge badge">149</span></a></li>
@@ -323,7 +298,7 @@
           <header class="rubric-detail__header">
             <div class="clearfix">
               <div class="col-xs-12">
-                <h2 class="rubric-detail__title">Разделы<span class="rubric-detail__tabs"><a href="#" class="rubric-detail__tab active">наглядно</a><a href="#" class="rubric-detail__tab">кратко</a></span><a href="#" class="rubric-detail__close"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></h2>
+                <h2 class="rubric-detail__title">Разделы<span class="rubric-detail__tabs"><a href="#" class="rubric-detail__tab active">наглядно</a><a href="#" class="rubric-detail__tab">кратко</a></span><a href="#" class="rubric-detail__close js-close-rubric"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></h2>
               </div>
             </div>
           </header>
@@ -538,7 +513,7 @@
               </div>
               <div class="col-xs-12">
                 <footer class="rubric-detail__foo">
-                  <div class="rubric-detail__title"><a href="#" class="rubric-detail__close"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></div>
+                  <div class="rubric-detail__title"><a href="#" class="rubric-detail__close js-close-rubric"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></div>
                 </footer>
               </div>
             </div>

@@ -1,31 +1,13 @@
-.main-slider
+.main-slider.carousel.carouse__main
 	.main-slider__wrap
 		.container
 			.row
 				.col-xs-12
 					.main-slider__arrows#main-slider__arrows
-	.main-slider__container
-		div.main-slider__slide
-			img(src="images/main-slider/1.jpg", alt="")
-			.main-slider__slide-title
-				| Взгляд из-за угла: Танцевальный бум
-		div.main-slider__slide
-			img(src="images/main-slider/2.jpg", alt="")
-			.main-slider__slide-title
-				| Взгляд из-за угла: Танцевальный бум
-		div.main-slider__slide
-			img(src="images/main-slider/3.jpg", alt="")
-			.main-slider__slide-title
-				| Взгляд из-за угла: Танцевальный бум
-		div.main-slider__slide
-			img(src="images/main-slider/1.jpg", alt="")
-			.main-slider__slide-title
-				| Взгляд из-за угла: Танцевальный бум
-		div.main-slider__slide
-			img(src="images/main-slider/2.jpg", alt="")
-			.main-slider__slide-title
-				| Взгляд из-за угла: Танцевальный бум
-		div.main-slider__slide
-			img(src="images/main-slider/3.jpg", alt="")
-			.main-slider__slide-title
-				| Взгляд из-за угла: Танцевальный бум
+	.main-slider__container.js-main-slider
+		+main-slide("main-slider/1.jpg", "Взгляд из-за угла: Танцевальный бум")
+		+main-slide("main-slider/3.jpg", "Взгляд из-за угла: Танцевальный бум")
+		+main-slide("main-slider/2.jpg", "Взгляд из-за угла: Танцевальный бум")
+		+main-slide("main-slider/1.jpg", "Взгляд из-за угла: Танцевальный бум")
+		+main-slide("main-slider/3.jpg", "Взгляд из-за угла: Танцевальный бум")
+		+main-slide("main-slider/2.jpg", "Взгляд из-за угла: Танцевальный бум")

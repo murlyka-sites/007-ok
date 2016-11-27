@@ -19,17 +19,17 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <form action="" class="header__inner">
+              <form action="" class="header__inner js-header-inner">						
                 <input type="search" placeholder="поиск" class="header__inner-input">
-                <button class="header__inner-ok btn__ok">ОК</button><a href="#" class="header__inner-close"><i class="fa fa-2x fa-times-circle-o"></i></a>
+                <button class="header__inner-ok btn__ok">ОК</button><a href="#" class="header__inner-close js-header-close"><i class="fa fa-2x fa-times-circle-o"></i></a>
               </form>
               <div class="clearfix">
                 <button class="header__humburger"><span class="humburger"></span></button>
               </div>
-              <div class="header__container">
+              <div class="header__container">						
                 <div class="header__col">
                   <ul class="header__nav header__nav--left">
-                    <li class="hidden-xs"><a class="special-item">Разделы</a></li>
+                    <li class="hidden-xs"><a class="header__nav-rubric js-open-rubric">Разделы</a></li>
                     <li><a>Афиша</a></li>
                     <li><a>Новости</a></li>
                     <li><a href="#" class="header__nav-author-btn visible-xs">Стать автором</a></li>
@@ -41,7 +41,7 @@
                   <ul class="header__nav header__nav--right">
                     <li><a>Об авторах</a></li>
                     <li><a>Стать автором</a></li>
-                    <li><a href="#" class="header__search"><i class="fa fa-search icon-search"></i></a></li>
+                    <li><a href="#" class="header__search js-header-open"><i class="fa fa-search icon-search"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -80,14 +80,14 @@
               <header class="article__header">
                 <h2 class="article__title">Большое путешествие по Лофотенам.</h2>
               </header>
-              <div class="article__text">
-                <div class="article__slider">
+              <div class="article__text carousel">
+                <div class="article__slider js-article-slider">
                   <div><img src="images/article-slider/1.jpg" alt=""></div>
                   <div><img src="images/article-slider/1.jpg" alt=""></div>
                   <div><img src="images/article-slider/1.jpg" alt=""></div>
                   <div><img src="images/article-slider/1.jpg" alt=""></div>
                 </div>
-                <div class="article__thumb">
+                <div class="article__thumb js-article-thumb">
                   <div><img src="images/article-slider/thumb/1.jpg" alt=""></div>
                   <div><img src="images/article-slider/thumb/2.jpg" alt=""></div>
                   <div><img src="images/article-slider/thumb/3.jpg" alt=""></div>
@@ -116,7 +116,7 @@
             </main>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 container__aside">
-            <aside class="aside aside--baige aside--long">
+            <aside class="aside aside--baige aside--long aside--top-margin">
               <div class="aside-social-links social social--white">
                 <div class="social__title">Подписывайтесь:</div>
                 <ul class="social__list">
@@ -128,55 +128,31 @@
                   <li class="social__item"><a href="#" class="social__link"><span class="social__in"></span></a></li>
                 </ul>
               </div>
-              <div class="aside-news aside-news--white">
+              <div class="aside-news aside-news--white carousel carousel-news carousel-news-white">
                 <h4 class="aside-news__title">Новости</h4>
-                <div class="aside-news__items">
-                  <div class="aside-news__group"><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">12 ноября 16:20</div>
-                      <div class="aside-news__item-title">
-                        Выставка молодых 
-                        новгородских  
-                        художников открылась 
-                        выставка 
-                        инструментов
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных 
-                        древностей 
-                        инструментов 
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных инструментов инструментов
-                      </div></a></div>
-                  <div class="aside-news__group"><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">12 ноября 16:20</div>
-                      <div class="aside-news__item-title">
-                        Выставка молодых 
-                        новгородских  
-                        художников открылась 
-                        выставка 
-                        инструментов
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных 
-                        древностей 
-                        инструментов 
-                      </div></a><a href="#" class="aside-news__item">
-                      <div class="aside-news__item-date">10 ноября 13:20</div>
-                      <div class="aside-news__item-title">
-                        В Великом Новгороде 
-                        вспомнят основателя 
-                        Центра музыкальных инструментов инструментов
-                      </div></a></div>
+                <div class="aside-news__items js-aside-news-slider">
+                      <div class="aside-news__group">
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">12 ноября 16:20</time>
+                                <div class="aside-news__item-title">Выставка молодых новгородских художников открылась выставка инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных  древностей инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных инструментов инструментов</div></a></div>
+                      </div>
+                      <div class="aside-news__group">
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">12 ноября 16:20</time>
+                                <div class="aside-news__item-title">Выставка молодых новгородских художников открылась выставка инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных  древностей инструментов</div></a></div>
+                            <div class="aside-news__item"><a href="#" class="link-none">
+                                <time datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм" class="aside-news__item-date">10 ноября 13:20</time>
+                                <div class="aside-news__item-title">В Великом Новгороде вспомнят основателя Центра музыкальных инструментов инструментов</div></a></div>
+                      </div>
                 </div>
               </div><a href="#">
                 <div class="aside-post aside-post--white">
@@ -184,9 +160,9 @@
                 </div></a>
               <div class="aside-social-tabs aside-social-tabs--white">
                 <ul class="aside-social-tabs__list">
-                  <li class="active"><a href="#social-tab-vk"><span class="i-social-vk"></span></a></li>
-                  <li><a href="#social-tab-fb"><span class="i-social-fb"></span></a></li>
-                  <li><a href="#social-tab-tw"><span class="i-social-tw"></span></a></li>
+                  <li class="active"><a href="#social-tab-vk" class="js-social-tab"><span class="i-social-vk"></span></a></li>
+                  <li><a href="#social-tab-fb" class="js-social-tab"><span class="i-social-fb"></span></a></li>
+                  <li><a href="#social-tab-tw" class="js-social-tab"><span class="i-social-tw"></span></a></li>
                 </ul>
                 <div class="aside-social-tabs__contents">
                   <div id="social-tab-vk" class="aside-social-tabs__content active"><img src="images/other/1.jpg" alt="" style="max-width: 100%"></div>
@@ -245,71 +221,54 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/1.jpg" alt=""></a><a href="#" style="background-color: #e1525f;" class="articles-list__item-tag">Музыка</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  Записки музыканта: 
-                  «Акафист» — слушать стоя</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/1.jpg" alt="Записки музыканта: «Акафист» — слушать стоя" width="270" height="152"></a><a href="#" style="background-color: rgba(225, 82, 95, 0.7);" class="articles-list__item-tag">Музыка</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">Записки музыканта: «Акафист» — слушать стоя</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/2.jpg" alt=""></a><a href="#" style="background-color: #3ad173;" class="articles-list__item-tag">Искусство</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  В Тампере успешно прошёл 
-                  Российско-Финляндский 
-                  Российско-Финляндский</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/2.jpg" alt="В Тампере успешно прошёл Российско-Финляндский" width="270" height="152"></a><a href="#" style="background-color: rgba(58, 209, 115, 0.7);" class="articles-list__item-tag">Искусство</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">В Тампере успешно прошёл Российско-Финляндский</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/3.jpg" alt=""></a><a href="#" style="background-color: #dfb33e;" class="articles-list__item-tag">Музыка</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  Здесь был Александр: 
-                  Сортавала. Находка</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/3.jpg" alt="Здесь был Александр: Сортавала. Находка" width="270" height="152"></a><a href="#" style="background-color:  rgba(225, 82, 95, 0.7);" class="articles-list__item-tag">Музыка</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">Здесь был Александр: Сортавала. Находка</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/1.jpg" alt=""></a><a href="#" style="background-color:  #e1525f;" class="articles-list__item-tag">Музыка</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  Записки музыканта: 
-                  «Акафист» — слушать стоя</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/1.jpg" alt="Записки музыканта: «Акафист» — слушать стоя" width="270" height="152"></a><a href="#" style="background-color: rgba(225, 82, 95, 0.7);" class="articles-list__item-tag">Музыка</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">Записки музыканта: «Акафист» — слушать стоя</a></div>
+                </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/5.jpg" alt=""></a><a href="#" style="background-color: #3cc8d2;" class="articles-list__item-tag">Выставки</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  Здесь был Андрей: Гобустан. 
-                  Встреча с наскальными ...</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/5.jpg" alt="Здесь был Андрей: Гобустан. Встреча с наскальными ..." width="270" height="152"></a><a href="#" style="background-color: #3cc8d2;" class="articles-list__item-tag">Выставки</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">Здесь был Андрей: Гобустан. Встреча с наскальными ...</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/6.jpg" alt=""></a><a href="#" style="background-color: #5277e1;" class="articles-list__item-tag">Кино</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  Ход конем: 148 живых  
-                  достояний России</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/6.jpg" alt="Ход конем: 148 живых  достояний России" width="270" height="152"></a><a href="#" style="background-color: #5277e1;" class="articles-list__item-tag">Кино</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">Ход конем: 148 живых  достояний России</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/7.jpg" alt=""></a><a href="#" style="background-color: #52b0e1;" class="articles-list__item-tag">Театр</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  Шаг к мечте: Общение 
-                  — это просто?							</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/7.jpg" alt="Шаг к мечте: Общение — это просто?" width="270" height="152"></a><a href="#" style="background-color: #52b0e1;" class="articles-list__item-tag">Театр</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">Шаг к мечте: Общение — это просто?</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="articles-list__item">
-              <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/8.jpg" alt=""></a><a href="#" style="background-color: #3cc8d2;" class="articles-list__item-tag">Выставки</a></div>
-              <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">
-                  Здесь был Андрей: Гобустан. 
-                  Встреча с наскальными ...</a></div>
-            </div>
+                <div class="articles-list__item">
+                  <div class="articles-list__item-pr"><a href="#"><img src="images/articles-list/8.jpg" alt="Здесь был Андрей: Гобустан. Встреча с наскальными ..." width="270" height="152"></a><a href="#" style="background-color: #3cc8d2;" class="articles-list__item-tag">Выставки</a></div>
+                  <div class="articles-list__item-desc"><a href="#" class="articles-list__item-title">Здесь был Андрей: Гобустан. Встреча с наскальными ...</a></div>
+                </div>
           </div>
         </div>
         <div class="row">
@@ -336,11 +295,9 @@
         </div>
       </div>
     </div>
-    <div class="tags-line--empty"></div>
     <div class="distribution">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12"><a href="#" class="distribution__up"><span class="i-up"></span></a></div>
           <div class="col-xs-12 col-sm-6">
             <form action="" class="distribution__content">Хотите получать рассылку ?<br class="hidden-lg">
               <input type="email" placeholder="Оставьте ваш емайл" required class="distribution__email">
@@ -352,12 +309,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><a href="#" class="distribution__up js-arrow-up"><span class="i-up"></span></a>
     <footer class="foo">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-3">
-            <button class="nav-foo__humburger pull-right"><span class="humburger"></span></button><img src="images/foo-logo.png" alt="" class="foo__logo">
+            <button class="nav-foo__humburger pull-right js-open-menu"><span class="humburger"></span></button><img src="images/foo-logo.png" alt="" class="foo__logo">
           </div>
           <div class="col-xs-12 col-md-9">
             <nav class="foo__nav nav-foo">
@@ -381,10 +338,10 @@
         </div>
       </div>
     </footer>
-    <div class="dropdown-left">
+    <div class="dropdown-left js-dropdown">
       <div class="drop-rubric rubric">
         <div class="rubric-hidden rubric-briefly">
-          <div class="rubric-briefly__tabs"><a href="#" class="rubric-briefly__tab">наглядно</a><a href="#" class="rubric-briefly__tab active">кратко</a></div><a href="#" class="rubric-briefly__close"><span class="i-drop-close rubric-detail__close-icon"></span></a>
+          <div class="rubric-briefly__tabs"><a href="#" class="rubric-briefly__tab">наглядно</a><a href="#" class="rubric-briefly__tab active">кратко</a></div><a href="#" class="rubric-briefly__close js-close-rubric"><span class="i-drop-close rubric-detail__close-icon"></span></a>
           <ul>
             <li><a href="#">Театр<span style="background: #52b0e1" class="rubric-briefly__badge badge">165</span></a></li>
             <li><a href="#">Кино<span style="background: #7592e7;" class="rubric-briefly__badge badge">149</span></a></li>
@@ -403,7 +360,7 @@
           <header class="rubric-detail__header">
             <div class="clearfix">
               <div class="col-xs-12">
-                <h2 class="rubric-detail__title">Разделы<span class="rubric-detail__tabs"><a href="#" class="rubric-detail__tab active">наглядно</a><a href="#" class="rubric-detail__tab">кратко</a></span><a href="#" class="rubric-detail__close"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></h2>
+                <h2 class="rubric-detail__title">Разделы<span class="rubric-detail__tabs"><a href="#" class="rubric-detail__tab active">наглядно</a><a href="#" class="rubric-detail__tab">кратко</a></span><a href="#" class="rubric-detail__close js-close-rubric"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></h2>
               </div>
             </div>
           </header>
@@ -618,7 +575,7 @@
               </div>
               <div class="col-xs-12">
                 <footer class="rubric-detail__foo">
-                  <div class="rubric-detail__title"><a href="#" class="rubric-detail__close"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></div>
+                  <div class="rubric-detail__title"><a href="#" class="rubric-detail__close js-close-rubric"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></div>
                 </footer>
               </div>
             </div>

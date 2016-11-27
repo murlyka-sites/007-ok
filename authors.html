@@ -19,17 +19,17 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <form action="" class="header__inner">
+              <form action="" class="header__inner js-header-inner">						
                 <input type="search" placeholder="поиск" class="header__inner-input">
-                <button class="header__inner-ok btn__ok">ОК</button><a href="#" class="header__inner-close"><i class="fa fa-2x fa-times-circle-o"></i></a>
+                <button class="header__inner-ok btn__ok">ОК</button><a href="#" class="header__inner-close js-header-close"><i class="fa fa-2x fa-times-circle-o"></i></a>
               </form>
               <div class="clearfix">
                 <button class="header__humburger"><span class="humburger"></span></button>
               </div>
-              <div class="header__container">
+              <div class="header__container">						
                 <div class="header__col">
                   <ul class="header__nav header__nav--left">
-                    <li class="hidden-xs"><a class="special-item">Разделы</a></li>
+                    <li class="hidden-xs"><a class="header__nav-rubric js-open-rubric">Разделы</a></li>
                     <li><a>Афиша</a></li>
                     <li><a>Новости</a></li>
                     <li><a href="#" class="header__nav-author-btn visible-xs">Стать автором</a></li>
@@ -41,7 +41,7 @@
                   <ul class="header__nav header__nav--right">
                     <li><a>Об авторах</a></li>
                     <li><a>Стать автором</a></li>
-                    <li><a href="#" class="header__search"><i class="fa fa-search icon-search"></i></a></li>
+                    <li><a href="#" class="header__search js-header-open"><i class="fa fa-search icon-search"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -109,137 +109,169 @@
         </div>
         <div style="display: none;" class="clearfix authors__cards">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/1.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Алексеев</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Алхимия звука»</a></div>
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/1.jpg" alt="Андрей Алексеев" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Алексеев</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Алхимия звука»</a></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/2.jpg" alt="Серж Була" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Серж Була</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«В поисках масок»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/2.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Серж Була</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«В поисках масок»</a></div>
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/3.jpg" alt="Михаил Данилов" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Михаил Данилов</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Каллиграфия для всех»</a></div>
+                        </div>
+                      </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/3.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Михаил Данилов</a>
-                  <div class="authors__card-desc">автор проекта<br><a href="#">«Каллиграфия для всех»</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/4.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Светлана Дерепащук</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Мастерская»</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/5.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Рина Елизарова</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Ролевые гардеробы»</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/6.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Ефимов</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Забавные рассказы»</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/7.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Ефросинья Кочигарова</a>
-                  <div class="authors__card-desc"> автор проекта<br><a href="#">«Фактор XY»</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/8.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Эдуард Крейн</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Слепая зона»</a></div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/4.jpg" alt="Светлана Дерепащук" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Светлана Дерепащук</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Мастерская»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/1.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Алексеев</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Алхимия звука»</a></div>
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/5.jpg" alt="Рина Елизарова" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Рина Елизарова</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Ролевые гардеробы»</a></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/6.jpg" alt="Андрей Ефимов" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Ефимов</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Забавные рассказы»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/2.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Серж Була</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«В поисках масок»</a></div>
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/7.jpg" alt="Ефросинья Кочигарова" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Ефросинья Кочигарова</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Фактор XY»</a></div>
+                        </div>
+                      </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/3.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Михаил Данилов</a>
-                  <div class="authors__card-desc">автор проекта<br><a href="#">«Каллиграфия для всех»</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/4.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Светлана Дерепащук</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Мастерская»</a></div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/8.jpg" alt="Эдуард Крейн" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Эдуард Крейн</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Слепая зона»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/5.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Рина Елизарова</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Ролевые гардеробы»</a></div>
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/1.jpg" alt="Андрей Алексеев" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Алексеев</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Алхимия звука»</a></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/2.jpg" alt="Серж Була" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Серж Була</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«В поисках масок»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/6.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Ефимов</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Забавные рассказы»</a></div>
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/3.jpg" alt="Михаил Данилов" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Михаил Данилов</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Каллиграфия для всех»</a></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/4.jpg" alt="Светлана Дерепащук" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Светлана Дерепащук</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Мастерская»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/7.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Ефросинья Кочигарова</a>
-                  <div class="authors__card-desc"> автор проекта<br><a href="#">«Фактор XY»</a></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/5.jpg" alt="Рина Елизарова" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Рина Елизарова</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Ролевые гардеробы»</a></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/6.jpg" alt="Андрей Ефимов" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Андрей Ефимов</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Забавные рассказы»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="authors__card">
-                <div class="authors__card-pr"><a href="#"><img src="images/authors-card/8.jpg" alt=""></a></div>
-                <div class="authors__card-foo"><a href="#" class="authors__card-name">Эдуард Крейн</a>
-                  <div class="authors__card-desc">автор проекта <br><a href="#">«Слепая зона»</a></div>
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/7.jpg" alt="Ефросинья Кочигарова" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Ефросинья Кочигарова</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Фактор XY»</a></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                      <div class="authors__card">
+                        <div class="authors__card-pr"><a href="#"><img src="images/authors-card/8.jpg" alt="Эдуард Крейн" width="268" height="268"></a></div>
+                        <div class="authors__card-foo"><a href="#" class="authors__card-name">Эдуард Крейн</a>
+                          <div class="authors__card-desc">автор проекта <br><a href="#">«Слепая зона»</a></div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -382,54 +414,54 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/1.jpg" alt=""></a><a href="#" style="background-color: rgba(225, 82, 95, 0.7);" class="special__item-tag">Музыка</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">Записки музыканта </a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/1.jpg" alt="Записки музыканта " width="270" height="152"></a><a href="#" style="background-color: rgba(225, 82, 95, 0.7);" class="special__item-tag">Музыка</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">Записки музыканта </a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/2.jpg" alt=""></a><a href="#" style="background-color: rgba(58, 209, 115, 0.7);" class="special__item-tag">Культура</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">Выходные в Великом Новгороде</a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/2.jpg" alt="Выходные в Великом Новгороде" width="270" height="152"></a><a href="#" style="background-color: rgba(58, 209, 115, 0.7);" class="special__item-tag">Культура</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">Выходные в Великом Новгороде</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/3.jpg" alt=""></a><a href="#" style="background-color: rgba(225, 82, 95, 0.7);" class="special__item-tag">Музыка</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">На концерте</a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/3.jpg" alt="На концерте" width="270" height="152"></a><a href="#" style="background-color: rgba(225, 82, 95, 0.7);" class="special__item-tag">Музыка</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">На концерте</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/4.jpg" alt=""></a><a href="#" style="background-color: rgba(58, 209, 115, 0.7);" class="special__item-tag">Культура</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">Форум </a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/4.jpg" alt="Форум " width="270" height="152"></a><a href="#" style="background-color: rgba(58, 209, 115, 0.7);" class="special__item-tag">Культура</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">Форум </a></div>
+                </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/5.jpg" alt=""></a><a href="#" style="background-color: rgba(82, 119, 225, 0.7);" class="special__item-tag">Кино</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">Лабиринты</a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/5.jpg" alt="Лабиринты" width="270" height="152"></a><a href="#" style="background-color: rgba(82, 119, 225, 0.7);" class="special__item-tag">Кино</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">Лабиринты</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/6.jpg" alt=""></a><a href="#" style="background-color: rgba(60, 200, 210, 0.7);" class="special__item-tag">Выставки</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">Здесь был Андрей</a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/6.jpg" alt="Здесь был Андрей" width="270" height="152"></a><a href="#" style="background-color: rgba(60, 200, 210, 0.7);" class="special__item-tag">Выставки</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">Здесь был Андрей</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/7.jpg" alt=""></a><a href="#" style="background-color: rgba(60, 200, 210, 0.7);" class="special__item-tag">Выставки</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">Встреча</a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/7.jpg" alt="Встреча" width="270" height="152"></a><a href="#" style="background-color: rgba(60, 200, 210, 0.7);" class="special__item-tag">Выставки</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">Встреча</a></div>
+                </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="special__item">
-              <div class="special__item-pr"><a href="#"><img src="images/special/8.jpg" alt=""></a><a href="#" style="background-color: rgba(82, 119, 225, 0.7);" class="special__item-tag">Кино</a></div>
-              <div class="special__item-desc"><a href="#" class="special__item-title">Ход конем</a></div>
-            </div>
+                <div class="special__item">
+                  <div class="special__item-pr"><a href="#"><img src="images/special/8.jpg" alt="Ход конем" width="270" height="152"></a><a href="#" style="background-color: rgba(82, 119, 225, 0.7);" class="special__item-tag">Кино</a></div>
+                  <div class="special__item-desc"><a href="#" class="special__item-title">Ход конем</a></div>
+                </div>
           </div>
         </div>
         <div class="row">
@@ -437,28 +469,11 @@
         </div>
       </div>
     </div>
-    <div class="distribution">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <form action="" class="distribution__content">Хотите получать рассылку ?<br class="hidden-lg">
-              <input type="email" placeholder="Оставьте ваш емайл" required class="distribution__email">
-              <button class="btn__ok distribution__ok">ОК</button>
-            </form>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <div class="distribution__content distribution__right">Подписывайтесь, на наши социальный сети:<br class="hidden-lg"><a href="#" class="distribution__social-link"><span class="social-dark__vk"></span></a><a href="#" class="distribution__social-link"><span class="social-dark__fb"></span></a><a href="#" class="distribution__social-link"><span class="social-dark__tw"></span></a><a href="#" class="distribution__social-link"><span class="social-dark__ok"></span></a><a href="#" class="distribution__social-link"><span class="social-dark__yt"></span></a><a href="#" class="distribution__social-link"><span class="social-dark__in"></span></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
     <footer class="foo">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-3">
-            <button class="nav-foo__humburger pull-right"><span class="humburger"></span></button><img src="images/foo-logo.png" alt="" class="foo__logo">
+            <button class="nav-foo__humburger pull-right js-open-menu"><span class="humburger"></span></button><img src="images/foo-logo.png" alt="" class="foo__logo">
           </div>
           <div class="col-xs-12 col-md-9">
             <nav class="foo__nav nav-foo">
@@ -482,10 +497,10 @@
         </div>
       </div>
     </footer>
-    <div class="dropdown-left">
+    <div class="dropdown-left js-dropdown">
       <div class="drop-rubric rubric">
         <div class="rubric-hidden rubric-briefly">
-          <div class="rubric-briefly__tabs"><a href="#" class="rubric-briefly__tab">наглядно</a><a href="#" class="rubric-briefly__tab active">кратко</a></div><a href="#" class="rubric-briefly__close"><span class="i-drop-close rubric-detail__close-icon"></span></a>
+          <div class="rubric-briefly__tabs"><a href="#" class="rubric-briefly__tab">наглядно</a><a href="#" class="rubric-briefly__tab active">кратко</a></div><a href="#" class="rubric-briefly__close js-close-rubric"><span class="i-drop-close rubric-detail__close-icon"></span></a>
           <ul>
             <li><a href="#">Театр<span style="background: #52b0e1" class="rubric-briefly__badge badge">165</span></a></li>
             <li><a href="#">Кино<span style="background: #7592e7;" class="rubric-briefly__badge badge">149</span></a></li>
@@ -504,7 +519,7 @@
           <header class="rubric-detail__header">
             <div class="clearfix">
               <div class="col-xs-12">
-                <h2 class="rubric-detail__title">Разделы<span class="rubric-detail__tabs"><a href="#" class="rubric-detail__tab active">наглядно</a><a href="#" class="rubric-detail__tab">кратко</a></span><a href="#" class="rubric-detail__close"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></h2>
+                <h2 class="rubric-detail__title">Разделы<span class="rubric-detail__tabs"><a href="#" class="rubric-detail__tab active">наглядно</a><a href="#" class="rubric-detail__tab">кратко</a></span><a href="#" class="rubric-detail__close js-close-rubric"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></h2>
               </div>
             </div>
           </header>
@@ -719,7 +734,7 @@
               </div>
               <div class="col-xs-12">
                 <footer class="rubric-detail__foo">
-                  <div class="rubric-detail__title"><a href="#" class="rubric-detail__close"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></div>
+                  <div class="rubric-detail__title"><a href="#" class="rubric-detail__close js-close-rubric"><span class="rubric-detail__close-title">свернуть </span><span class="i-drop-close rubric-detail__close-icon"></span></a></div>
                 </footer>
               </div>
             </div>

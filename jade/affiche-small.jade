@@ -1,43 +1,19 @@
-.affiche-small
+.affiche-small.bg-dark
 	.container
 		.row
 			.col-xs-12.col-lg-6
 				.row
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/1.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 1 марта в 16:00
-							a.affiche-small__item-title(href="#")
-								| Прогулка
+						+affiche-item-small("affiche-small/1.jpg", "1 марта в 16:00", "Прогулка", "-small")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/2.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 28 февраля в 17:00
-							a.affiche-small__item-title(href="#")
-								| Лобстер
+						+affiche-item-small("affiche-small/2.jpg", "28 февраля в 17:00", "Лобстер", "-small")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/3.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 10 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| Убийца
+						+affiche-item-small("affiche-small/3.jpg", "10 февраля в 22:00", "Убийца", "-small")
 
 			.col-xs-12.col-lg-6
 				.row
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/4.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 11 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| Выживший
+						+affiche-item-small("affiche-small/4.jpg", "11 февраля в 22:00", "Выживший")
 					.col-xs-12.col-sm-8
 						.affiche-small__item
 							include calendar.jade
@@ -45,77 +21,20 @@
 			.col-xs-12.col-lg-6
 				.row
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/5.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 10 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| Девочки хотят 
-								| танцевать!
+						+affiche-item-small("affiche-small/5.jpg", "10 февраля в 22:00", "Девочки хотят танцевать!")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/6.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 03 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| Презентация 
-								| поэтического 
-								| сборника ...
+						+affiche-item-small("affiche-small/6.jpg", "03 февраля в 22:00", "Презентация поэтического сборника ...")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/7.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 02 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| 28 панфиловцев
+						+affiche-item-small("affiche-small/7.jpg", "02 февраля в 22:00", "28 панфиловцев")
 			
 			.col-xs-12.col-lg-6
 				.row
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/8.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 11 февраля в 22:00
-							a.affiche-small__item-title(href="#")
-								| Rock Ded 
-								| Moroz 2016
+						+affiche-item-small("affiche-small/8.jpg", "11 февраля в 22:00", "Rock Ded Moroz 2016")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/9.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 28 февраля в 17:00
-							a.affiche-small__item-title(href="#")
-								| DANCE ALL NIGHT
+						+affiche-item-small("affiche-small/9.jpg", "28 февраля в 17:00", "DANCE ALL NIGHT")
 					.col-xs-12.col-sm-4
-						.affiche-small__item
-							a.affiche-small__item-pr(href="#")
-								img(src="images/affiche-small/10.jpg", alt="")
-							a.affiche-small__item-date(href="#")
-								| 1 марта в 16:00
-							a.affiche-small__item-title(href="#")
-								| Creative Gallery 
-								| Dance Studio
-
+						+affiche-item-small("affiche-small/10.jpg", "1 марта в 16:00", "Creative Gallery Dance Studio")
 			.col-xs-12
 				a.btn__more.btn__more-dark(href="#")
 					| Ещё
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

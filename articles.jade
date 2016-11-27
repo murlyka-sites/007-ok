@@ -2,10 +2,11 @@ doctype html
 html
 	head
 		include jade/head.jade
-		title ОКультуренно | Главная
+		title ОКультуренно | Статьи
 	body
+		include jade/mixins.jade
 		include jade/header.jade
-		include jade/articles-wallpaper.jade
+		include jade/wallpaper/articles.jade
 		include jade/articles.jade
 		include jade/comments.jade
 		include jade/articles-list.jade
