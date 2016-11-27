@@ -1,0 +1,49 @@
+.affiche-small
+	.container
+		.row
+			.col-xs-12
+				.affiche-small__title
+					| Похожие события
+			.col-xs-12.col-lg-6
+				.row
+					.col-xs-12.col-sm-4
+						.affiche-small__item
+							a.affiche-small__item-pr(href="#")
+								img(src="images/affiche-small/1.jpg", alt="")
+							a.affiche-small__item-date(href="#")
+								| 1 марта в 16:00
+							a.affiche-small__item-title(href="#")
+								| Прогулка
+					.col-xs-12.col-sm-4
+						.affiche-small__item
+							a.affiche-small__item-pr(href="#")
+								img(src="images/affiche-small/2.jpg", alt="")
+							a.affiche-small__item-date(href="#")
+								| 28 февраля в 17:00
+							a.affiche-small__item-title(href="#")
+								| Лобстер
+					.col-xs-12.col-sm-4
+						.affiche-small__item
+							a.affiche-small__item-pr(href="#")
+								img(src="images/affiche-small/3.jpg", alt="")
+							a.affiche-small__item-date(href="#")
+								| 10 февраля в 22:00
+							a.affiche-small__item-title(href="#")
+								| Убийца
+
+			.col-xs-12.col-lg-6
+				.row
+					.col-xs-12.col-sm-4
+						.affiche-small__item
+							a.affiche-small__item-pr(href="#")
+								img(src="images/affiche-small/4.jpg", alt="")
+							a.affiche-small__item-date(href="#")
+								| 11 февраля в 22:00
+							a.affiche-small__item-title(href="#")
+								| Выживший
+					.col-xs-12.col-sm-8
+						.affiche-small__item
+							include calendar.jade
+			.col-xs-12
+				a.btn__more.btn__more-dark(href="#")
+					| Ещё

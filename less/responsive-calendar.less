@@ -1,0 +1,128 @@
+@black: #000;
+@white: #fff;
+@blueBackground: #1d86c8;
+@baseFontSize: 14px;
+
+
+.responsive-calendar {
+  background: #fff;
+  
+  &__body {
+    padding: 10px;
+    background: #f2f2f2;  
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    
+    &:before {
+      content: "";
+      display: block;
+      border: 8px solid transparent;
+    }
+  }
+
+  &__prev {
+    left: 20px;
+    padding-right: 4px;
+    
+    &:before {
+      border-right-color: #508ad2;
+    }
+  }
+
+  &__next {
+    right: 20px;
+    
+    &:before {
+      border-left-color: #508ad2;
+    }
+  }
+
+  
+  .controls {
+    position: relative;
+    padding: 2px 0;
+    text-align: center;
+    color: #21323c;
+    
+
+    a {
+      cursor: pointer;
+    }
+
+    h4 {
+      font-family: Roboto;
+      text-align: center;
+      color: #21323c;
+    }
+  }
+
+  .day-headers, .days {
+    font-size: 0;
+  }
+
+  .day {
+    display: inline-block;
+    position: relative;
+    border:  1px #e8e8e8 solid;
+    background: white;
+    font-size: @baseFontSize;
+    width: 100/7%;
+    text-align: center;
+
+    a {
+      color: #555;
+      display: block;
+      cursor: pointer;
+      padding: 20% 0 20% 0;
+
+      &:hover {
+        //.box-shadow( inset 0px 0px 0px 1px rgba(170, 170, 170, 1) );
+        background-color: #eee;
+        text-decoration: none;
+      }
+    }
+
+    &.responsive-calendar__header{
+      background: transparent;
+      border: none;
+    }
+
+    &.active {
+      a {
+        background-color: @blueBackground;
+        color: @white;
+
+        &:hover {
+          background-color: lighten(@blueBackground, 10%);
+        }
+      }
+
+      .not-current {
+        background-color: lighten(@blueBackground, 30%);
+        color: @white;
+
+        &:hover {
+          background-color: lighten(@blueBackground, 40%);
+        }
+      }
+    }
+
+    &.not-current {
+      a {
+        color: #ddd;
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      z-index: 1;
+    }
+  }
+}

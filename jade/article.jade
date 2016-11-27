@@ -1,0 +1,108 @@
+.article
+	.container
+		.row.container__wrap
+			.col-xs-12.col-sm-8.col-md-8.col-lg-9.container__main
+				.clearfix.article__publ
+					.row
+						.col-xs-12.col-md-8
+							.article__publ-info
+								| Опубликовано 23.10.2016 в 15:20, 
+								a.article__publ-link(href="#type-publ")
+									|статья
+								| , раздел 
+								a.article__publ-link(href="#section-publ")
+									| путешествия
+								| , рубрика 
+								a.article__publ-link(href="#rubric-publ")
+									| Заметки
+						.col-xs-12.col-md-4
+							.article__publ-author
+								| автор: 
+								a(href="#")
+									| Игнатьев Весарион
+				main.article__main
+					header.article__header
+						h2.article__title
+							| Большое путешествие по Лофотенам.
+					.article__text
+						.article__slider
+							div
+								img(src="images/article-slider/1.jpg", alt="")
+							div
+								img(src="images/article-slider/1.jpg", alt="")
+							div
+								img(src="images/article-slider/1.jpg", alt="")
+							div
+								img(src="images/article-slider/1.jpg", alt="")
+						.article__thumb
+							div
+								img(src="images/article-slider/thumb/1.jpg", alt="")
+							div
+								img(src="images/article-slider/thumb/2.jpg", alt="")
+							div
+								img(src="images/article-slider/thumb/3.jpg", alt="")
+							div
+								img(src="images/article-slider/thumb/4.jpg", alt="")
+						.article__margin
+							p
+								| Продолжаем наше путешествие по Северной Норвегии. Сегодня – история о двух мирах: о дождливой скалистой Сене и солнечных неповторимых Линген-альпах. Путь на север, непростой и наполненный приключениями.
+							
+							p
+								| Для начала - карты. Наши стоянки отмечены красными кружками, на Линген мы заезжали по красной линии, и по ней же возвращались обратно.
+								br
+								| Итак, остров Сеня:
+						.article__wallpaper
+							img(src="images/article/1.jpg", alt="")
+						.article__margin
+							p
+								| 1. Приплыли к вечеру в Финнеснес на быстром пароме. Солнце отражалось в бликах металла строгой архитектуры севера. Стекло и бетон сливались вместе с деревом. Солнце, яркое летнее северное солнце разбивается осколками в окнах прибрежных домов. 
+							p
+								| 2. Остров Сеня похож со спутника на гигантскую лапу зверя: растопырив пальца скалистыми горами, врезаясь в бухты фьордов, остров напоминает изгоя-отшельника даже по сравнению со всеми остальными островами Севера Норвегии. Нигде нет таких мощных скал, крутых подъёмов дорог, глубоких гротов, тусклых горных тоннелей и изумрудных бухт, как на Сене. Несколько пролётов моста отделяют меня от Острова, который мы хотим изведать. 
+						.article__wallpaper
+							img(src="images/article/2.jpg", alt="")
+					footer.article__foo
+						.clearfix
+							.article__share.share
+								span.share__title
+									| Поделиться: 
+								br.visible-xs
+								a.share__vk.share__link(href="#")
+									span.social__vk
+									.share__count
+										| 11
+								a.share__fb.share__link(href="#")
+									span.social__fb
+									.share__count
+										| 3
+								a.share__tw.share__link(href="#")
+									span.social__tw
+									.share__count
+										| 0
+
+							.article__hashtags.hashtags
+								a.link-reverse(href="#")
+									| #путешествия
+								| , 
+								a.link-reverse(href="#")
+									| #разное
+								| , 
+								a.link-reverse(href="#")
+									| #ок-журнал
+								| , 
+								a.link-reverse(href="#")
+									| #норвегия
+			.col-xs-12.col-sm-4.col-md-4.col-lg-3.container__aside
+				aside.aside.aside--baige.aside--long
+					include aside/social-links-white.jade
+					include aside/news-white.jade
+					include aside/post-1-white.jade
+					include aside/social-tabs-white.jade
+					include aside/post-2-white.jade
+					include aside/post-3-white.jade
+					include aside/post-4-white.jade
+					include aside/post-2-white.jade
+					include aside/post-3-white.jade
+					include aside/post-4-white.jade
+					include aside/post-3-white.jade
+					include aside/post-4-white.jade
+					include aside/post-4-white.jade

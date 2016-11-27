@@ -1,0 +1,47 @@
+.header--illusion
+	header.header
+		.container
+			.row
+				.col-xs-12
+					form.header__inner(action="")
+						
+						input.header__inner-input(type="search", placeholder="поиск")
+						button.header__inner-ok.btn__ok
+							| ОК
+						a.header__inner-close(href="#")
+							i.fa.fa-2x.fa-times-circle-o
+					.clearfix
+							button.header__humburger
+								span.humburger
+					.header__container
+						
+						.header__col
+							ul.header__nav.header__nav--left
+								li.hidden-xs
+									a.special-item
+										| Разделы
+								li
+									a
+										| Афиша
+								li
+									a
+										| Новости
+								li
+									a.header__nav-author-btn.visible-xs(href="#")
+										| Стать автором
+								li
+									a.btn__ok.visible-xs
+										| ОК
+						.header__col
+							img.header__logo.hidden-xs.hidden-sm(src="images/logo.png", alt="")
+						.header__col.hidden-xs
+							ul.header__nav.header__nav--right
+								li
+									a
+										| Об авторах
+								li
+									a
+										| Стать автором
+								li
+									a.header__search(href="#")
+										i.fa.fa-search.icon-search

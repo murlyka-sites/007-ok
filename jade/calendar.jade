@@ -1,0 +1,28 @@
+.responsive-calendar
+
+	.controls
+		a.responsive-calendar__prev(data-go="prev")
+		h4
+			span(data-head-month)
+			br
+			span(data-head-year)
+		a.responsive-calendar__next(data-go="next")
+
+	.responsive-calendar__body
+		.day-headers
+			.day.responsive-calendar__header
+				| Пн
+			.day.responsive-calendar__header
+				| Вт
+			.day.responsive-calendar__header
+				| Ср
+			.day.responsive-calendar__header
+				| Чт
+			.day.responsive-calendar__header
+				| Пт
+			.day.responsive-calendar__header
+				| Сб
+			.day.responsive-calendar__header
+				| Вс
+		.days(data-group="days")
+
