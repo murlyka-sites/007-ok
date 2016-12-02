@@ -3,15 +3,15 @@
 		.row
 			.col-xs-12.col-sm-6
 				form.distribution__content(action="")
-					| Хотите получать рассылку ?
-					br.hidden-lg
+					.distribution__title-social
+						| Хотите получать рассылку ?
 					input.distribution__email(type="email", placeholder="Оставьте ваш емайл", required)
 					button.btn__ok.distribution__ok
 						| ОК
 			.col-xs-12.col-sm-6
 				.distribution__content.distribution__right
-					| Подписывайтесь, на наши социальный сети:
-					br.hidden-lg
+					.distribution__title-social
+						| Подписывайтесь, на наши социальный сети:
 					a.distribution__social-link(href="#")
 						span.social-dark__vk
 					a.distribution__social-link(href="#")

@@ -1,7 +1,7 @@
 .article
 	.container
-		.row.container__wrap
-			.col-xs-12.col-sm-8.col-md-8.col-lg-9.container__main
+		.row.container-feed__wrap
+			.col-xs-12.col-md-8.col-lg-9.container-feed__main
 				.clearfix.article__publ
 					.row
 						.col-xs-12.col-md-8
@@ -91,7 +91,8 @@
 								| , 
 								a.link-reverse(href="#")
 									| #норвегия
-			.col-xs-12.col-sm-4.col-md-4.col-lg-3.container__aside
+				include article-comments.jade
+			.col-xs-12.col-md-4.col-lg-3.container-feed__aside
 				aside.aside.aside--baige.aside--long.aside--top-margin
 					include aside/social-links-white.jade
 					include aside/news-white.jade

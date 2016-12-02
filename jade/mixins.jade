@@ -28,7 +28,8 @@ mixin posts-item(images, tag, color, type, title, desc)
 			| #{tag}
 		if type
 			.posts__item-type
-				| #{type}
+				a.link-none(href="#")
+					| #{type}
 
 		a.posts__item-inner(href="#")
 			.posts__item-title

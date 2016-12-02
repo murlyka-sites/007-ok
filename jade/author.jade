@@ -1,7 +1,7 @@
 .author
 	.container
-		.row.container__wrap
-			.col-xs-12.col-sm-6.col-md-8.col-lg-9.container__main
+		.row.container-feed__wrap
+			.col-xs-12.col-md-8.col-lg-9.container-feed__main
 				.author__short
 					| автор проектов: 
 					a(href="#")
@@ -55,7 +55,8 @@
 							+author-item("collapse/2.jpg", "Metallica - Master Of Puppets", "Третьего марта исполнилось тридцать лет альбому Master Of Puppets. Этот альбом до сих пор считается поклонниками группы Metallica и самими музыкантами одной из знаковых точек всего творческого пути группы.")
 							a.author__collapse-more.btn__more(href="#")
 								| Ещё
-			.col-xs-12.col-sm-6.col-md-4.col-lg-3.container__aside
+				include comments.jade
+			.col-xs-12.col-md-4.col-lg-3.container-feed__aside
 				aside.aside.aside--baige.aside--long.aside--top-margin
 					include aside/social-links-white.jade
 					include aside/news-white.jade

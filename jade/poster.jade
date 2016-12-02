@@ -1,7 +1,7 @@
-.poster
+.poster.feed
 	.container
-		.row.container__wrap
-			.col-xs-12.col-sm-6.col-md-8.col-lg-9.container__main
+		.row.container-feed__wrap
+			.col-xs-12.col-md-8.col-lg-9.container-feed__main
 				.poster__publ-info
 					| Опубликовано 23.10.2016 в 15:20, 
 					a.link-reverse(href="#")
@@ -111,35 +111,35 @@
 							.schedule__item-desc
 								| 17:40	17:50	18:00	18:20	18:25	18:40	19:20	19:30	19:40	20:00	20:05	20:10	20:20	20:40	20:45	20:50	21:00	21:40	22:00	22:20	22:30	22:40	23:00	23:05	23:10	23:20	23:40	23:45	0:05		0:10		0:15		0:20
 				footer.poster__foo.poster__foo
-						.clearfix
-							.poster__share.share
-								span.share__title
-									| Поделиться: 
-								br.visible-xs
-								a.share__vk.share__link(href="#")
-									span.social__vk
-									.share__count
-										| 11
-								a.share__fb.share__link(href="#")
-									span.social__fb
-									.share__count
-										| 3
-								a.share__tw.share__link(href="#")
-									span.social__tw
-									.share__count
-										| 0
+					.clearfix
+						.poster__share.share
+							span.share__title
+								| Поделиться: 
+							br.visible-xs
+							a.share__vk.share__link(href="#")
+								span.social__vk
+								.share__count
+									| 11
+							a.share__fb.share__link(href="#")
+								span.social__fb
+								.share__count
+									| 3
+							a.share__tw.share__link(href="#")
+								span.social__tw
+								.share__count
+									| 0
 
-							.poster__hashtags.hashtags
-								a.link-reverse(href="#")
-									| #кино
-								| , 
-								a.link-reverse(href="#")
-									| #афиша
-								| , 
-								a.link-reverse(href="#")
-									| #драмма
-
-			.col-xs-12.col-sm-6.col-md-4.col-lg-3.container__aside
+						.poster__hashtags.hashtags
+							a.link-reverse(href="#")
+								| #кино
+							| , 
+							a.link-reverse(href="#")
+								| #афиша
+							| , 
+							a.link-reverse(href="#")
+								| #драмма
+				include comments.jade
+			.col-xs-12.col-md-4.col-lg-3.container-feed__aside
 				aside.aside.aside--baige.aside--long
 					include aside/social-links-white.jade
 					include aside/news-white.jade

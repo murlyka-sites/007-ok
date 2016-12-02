@@ -3,19 +3,24 @@
 		.container
 			.row
 				.col-xs-12
-					form.header__inner.js-header-inner(action="")						
-						input.header__inner-input(type="search", placeholder="поиск")
-						button.header__inner-ok.btn__ok
-							| ОК
-						a.header__inner-close.js-header-close(href="#")
-							i.fa.fa-2x.fa-times-circle-o
-					.clearfix
-							button.header__humburger
+					.js-header-inner(style="display: none")
+						form.header__inner(action="")
+							input.header__inner-input(type="search", placeholder="поиск")
+							button.header__inner-ok.btn__ok
+								| ОК
+							a.header__inner-close.js-header-close(href="#")
+								i.fa.fa-2x.fa-times-circle-o
+					.clearfix.visible-xs
+							.pull-left
+								a.header__search.js-header-open(href="#")
+									i.fa.fa-search.icon-search
+							button.header__humburger.js-open-header-menu
 								span.humburger
+							img.header__logo(src="images/logo.png", alt="")
 					.header__container						
 						.header__col
 							ul.header__nav.header__nav--left
-								li.hidden-xs
+								li
 									a.header__nav-rubric.js-open-rubric
 										| Разделы
 								li
@@ -24,15 +29,16 @@
 								li
 									a
 										| Новости
-								li
-									a.header__nav-author-btn.visible-xs(href="#")
+								//- li.visible-xs
+									a.header__nav-author-btn(href="#")
 										| Стать автором
-								li
-									a.btn__ok.visible-xs
+								//- li.visible-xs
+									a.btn__ok
 										| ОК
 						.header__col
 							img.header__logo.hidden-xs.hidden-sm(src="images/logo.png", alt="")
-						.header__col.hidden-xs
+							img.header__logo.visible-sm(src="images/logo-micro.png", alt="")
+						.header__col
 							ul.header__nav.header__nav--right
 								li
 									a
@@ -40,6 +46,6 @@
 								li
 									a
 										| Стать автором
-								li
-									a.header__search.js-header-open(href="#")
+								li.hidden-xs
+									a.header__search.js-header-open.pull-right(href="#")
 										i.fa.fa-search.icon-search

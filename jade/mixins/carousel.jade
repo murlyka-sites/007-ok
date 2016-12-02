@@ -1,8 +1,12 @@
 mixin main-slide(images, title)
 	div.main-slider__slide
 		img(src="images/#{images}", alt="Альтернативный текст", width="970", height="500")
-		.main-slider__slide-title
-			| #{title}
+		.main-slider__slide-inner
+			.main-slider__slide-title
+				| #{title}
+			.main-slider__slide-desc
+				div
+					| 27 октября 2016 года в клубе Metro Великого Новгорода прошёл концерт удивительного коллектива - Психея.
 
 mixin affiche-slide(images, title, date)
 	.affiche__item

@@ -1,3 +1,4 @@
+var dropreset;
 $(document).ready(function() {
 
 	$(window).scroll(function () {
@@ -8,6 +9,8 @@ $(document).ready(function() {
 		}
 	});
 
+
+
 	// Слайдеры начало
 
 	$(".js-main-slider").slick({
@@ -17,7 +20,7 @@ $(document).ready(function() {
 		slidesToShow: 3,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 980,
 				settings: {
 					centerMode: false,
 					variableWidth: false,
@@ -31,6 +34,67 @@ $(document).ready(function() {
 		infinite: false,
 		appendArrows: ".aside-news__title"
 	});
+
+	$('.js-affiche-slider').on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+
+	});
+
+	$('.js-affiche-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide ) {
+		$(".js-affiche-slider .slick-active-last").removeClass("slick-active-last");
+		var $o = $($(".js-affiche-slider .slick-slide.slick-active")[$(".js-affiche-slider .slick-slide.slick-active").length - 1]);
+		if(currentSlide + 1 == nextSlide) {
+			$o.next().addClass("slick-active-last");
+		}	else {
+			$o.prev().addClass("slick-active-last");
+		}
+	})
+
+	$('.js-affiche-slider').on('init breakpoint reInit', function(event, slick, currentSlide, nextSlide ){		
+		$(".js-affiche-slider .slick-active-last").removeClass("slick-active-last");
+		$($(".js-affiche-slider .slick-slide.slick-active")[$(".js-affiche-slider .slick-slide.slick-active").length - 1]).addClass("slick-active-last")
+		$(".js-affiche-slider .slick-hover").removeClass("slick-hover")
+	});
+
+	$(".js-affiche-slider").on("mouseenter", ".slick-prev", function () {
+			$(".js-affiche-slider").addClass("slick-prev-hover");
+	});
+
+	$(".js-affiche-slider").on("mouseleave", ".slick-prev", function () {
+			$(".js-affiche-slider").removeClass("slick-prev-hover");
+	});
+
+	$(".js-affiche-slider").on("mouseenter", ".slick-next", function () {
+			$(".js-affiche-slider").addClass("slick-next-hover");
+	});
+
+	$(".js-affiche-slider").on("mouseleave", ".slick-next", function () {
+			$(".js-affiche-slider").removeClass("slick-next-hover");
+	});
+
+	$(".js-affiche-slider").on("mouseenter", ".slick-current", function () {
+			$(".js-affiche-slider").addClass("slick-current-slide-hover");
+	});
+
+	$(".js-affiche-slider").on("mouseleave", ".slick-current", function () {
+			$(".js-affiche-slider").removeClass("slick-current-slide-hover");
+	});
+
+	$(".js-affiche-slider").on("mouseenter", ".slick-active-last", function () {
+			$(".js-affiche-slider").addClass("slick-active-last-slide-hover");
+	});
+
+	$(".js-affiche-slider").on("mouseleave", ".slick-active-last", function () {
+			$(".js-affiche-slider").removeClass("slick-active-last-slide-hover");
+	});
+
+	// $(".js-affiche-slider").on("mouseenter", ".slick-current, .slick-prev", function() {
+	// 	$(".slick-prev").css("display: block");
+	// });
+
+	// $(".js-affiche-slider").on("mouseleave", ".slick-current, .slick-prev", function() {
+	// 	$(".slick-prev").css("display: none");
+	// });
+
 
 	$(".js-affiche-slider").slick({
 		dots: true,
@@ -56,6 +120,8 @@ $(document).ready(function() {
 			}
 		]
 	});
+
+
 
 	$(".js-article-slider").slick({
 		asNavFor: ".js-article-thumb"
@@ -114,14 +180,31 @@ $(document).ready(function() {
 		auto_close: false //set to true if you want the slider to auto close everytime a child link of it is clicked
 	});
 
+	var menuOpen = false;
+
 	$(".js-open-rubric").click(function() {
-		$("body, html").css("overflow", "hidden");
-		menu.activate();
+		// setTimeout(function() {
+			$("body, html").css("overflow", "hidden");
+			menu.activate();
+			menuOpen = true;
+		// }, 200)();
 	});
 
 	$(".js-close-rubric").click(function() {
 		$("body, html").css("overflow", "auto");
 		menu.deactivate();
+		menuOpen = false;
+		$(".reset").css("transform", "none")
+	});
+
+
+	$(window).resize(function () {
+		if (menuOpen) {
+			menu.activate();
+		}
+		// $("body, html").css("overflow", "auto");
+		// menu.reset();
+		// $(".reset").css("transform", "none")
 	});
 
 	$(".rubric-detail__tab:not(.active)").click(function() {
@@ -147,9 +230,19 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$(".js-open-header-menu").click(function() {
+		$(".header__container").toggleClass("header__container-open")
+
+		return false;
+	});
+
 	// поле поиска
 	$(".js-header-open, .js-header-close").click(function() {
-		$(".js-header-inner").toggleClass("header__inner-open");
+		if($(this).hasClass("js-header-open")) {
+			$(".js-header-inner").fadeIn();
+		} else {
+			$(".js-header-inner").fadeOut();
+		}
 
 		return false;
 	});
