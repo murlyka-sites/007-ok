@@ -1,6 +1,6 @@
 mixin main-slide(images, title)
 	div.main-slider__slide
-		img(src="images/#{images}", alt="Альтернативный текст", width="970", height="500")
+		img(src="images/"+images, alt="Альтернативный текст", width="970", height="500")
 		.main-slider__slide-inner
 			.main-slider__slide-title
 				| #{title}
@@ -12,7 +12,7 @@ mixin affiche-slide(images, title, date)
 	.affiche__item
 		a.link-none(href="#")
 			.affiche__item-pr
-				img(src="images/#{images}", alt="",)
+				img(src="images/" +images, alt="",)
 			time.affiche__item-date(datetime="ГГГГ-ММ-ДДTчч:мм:сс±чч:мм")
 				| #{title}
 			.affiche__item-title
